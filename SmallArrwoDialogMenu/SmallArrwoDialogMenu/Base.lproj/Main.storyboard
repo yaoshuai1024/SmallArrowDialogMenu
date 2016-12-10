@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AFn-XP-N8b">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="V49-gD-0zk">
+            <objects>
+                <viewController id="xmh-kZ-Lsb" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZwO-f1-889"/>
+                        <viewControllerLayoutGuide type="bottom" id="eO1-t0-0D1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rMA-L0-oEF">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-Ow-Dyc">
+                                <rect key="frame" x="177" y="290.5" width="22" height="22"/>
+                                <connections>
+                                    <action selector="showMenuFromCenter:" destination="xmh-kZ-Lsb" eventType="touchUpInside" id="5Jp-ZW-371"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7s-y6-VBl">
+                                <rect key="frame" x="15" y="15" width="22" height="22"/>
+                                <connections>
+                                    <action selector="showMenuFromLeftTop:" destination="xmh-kZ-Lsb" eventType="touchUpInside" id="ror-ZV-U00"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymL-IG-BYP">
+                                <rect key="frame" x="15" y="566" width="22" height="22"/>
+                                <connections>
+                                    <action selector="showMenuFromLeftBottom:" destination="xmh-kZ-Lsb" eventType="touchUpInside" id="epS-xk-0w7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhr-Vt-W3S">
+                                <rect key="frame" x="338" y="566" width="22" height="22"/>
+                                <connections>
+                                    <action selector="showMenuFromRightBottom:" destination="xmh-kZ-Lsb" eventType="touchUpInside" id="mxN-Gx-Nhs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ymL-IG-BYP" firstAttribute="leading" secondItem="rMA-L0-oEF" secondAttribute="leading" constant="15" id="47X-3p-NQ4"/>
+                            <constraint firstItem="7eg-Ow-Dyc" firstAttribute="centerX" secondItem="rMA-L0-oEF" secondAttribute="centerX" id="C1v-Mg-gMR"/>
+                            <constraint firstItem="7eg-Ow-Dyc" firstAttribute="centerY" secondItem="rMA-L0-oEF" secondAttribute="centerY" id="UX5-Qs-eZd"/>
+                            <constraint firstItem="o7s-y6-VBl" firstAttribute="leading" secondItem="rMA-L0-oEF" secondAttribute="leading" constant="15" id="XdL-Nx-Gtf"/>
+                            <constraint firstItem="eO1-t0-0D1" firstAttribute="top" secondItem="Hhr-Vt-W3S" secondAttribute="bottom" constant="15" id="hmn-dU-EgJ"/>
+                            <constraint firstItem="o7s-y6-VBl" firstAttribute="top" secondItem="ZwO-f1-889" secondAttribute="bottom" constant="15" id="lZC-sF-Y3c"/>
+                            <constraint firstAttribute="trailing" secondItem="Hhr-Vt-W3S" secondAttribute="trailing" constant="15" id="p2q-ug-E5G"/>
+                            <constraint firstItem="eO1-t0-0D1" firstAttribute="top" secondItem="ymL-IG-BYP" secondAttribute="bottom" constant="15" id="r9X-Zw-8aZ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="Ga4-lx-Idb">
+                        <barButtonItem key="leftBarButtonItem" systemItem="compose" id="RL6-0f-PX1">
+                            <connections>
+                                <action selector="showMenuFromLeftNavigationBarItem:" destination="xmh-kZ-Lsb" id="hFx-20-ac9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Zhm-pd-8SF">
+                            <connections>
+                                <action selector="showMenuFromRightNavigationBarItem:" destination="xmh-kZ-Lsb" id="UZh-St-pzc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3j-1u-JDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887.20000000000005" y="298.2008995502249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="apX-7s-h5j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AFn-XP-N8b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y1I-FU-PFA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xmh-kZ-Lsb" kind="relationship" relationship="rootViewController" id="l6E-ro-dmt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcH-fo-Dpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="298.2008995502249"/>
+        </scene>
+    </scenes>
+</document>
